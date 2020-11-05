@@ -1,5 +1,5 @@
 // If you don't want to use TypeScript you can delete this file!
-import React from "react"
+/*import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -31,4 +31,4 @@ export const query = graphql`
       buildTime(formatString: "YYYY-MM-DD hh:mm a z")
     }
   }
-`
+`*/
