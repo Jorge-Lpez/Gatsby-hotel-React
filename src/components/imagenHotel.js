@@ -34,7 +34,7 @@ const ImagenHotel = () => {
             image: file(relativePath: { eq:"8.jpg"}){
                 sharp:childImageSharp {
                     fluid {
-                        srcSetWebp
+                        ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
@@ -43,15 +43,14 @@ const ImagenHotel = () => {
     //...GatsbyImageSharpFluid_withWebp
     //srcSetWebp
     //console.log(image.sharp.fluid);
-
-    return ( 
+    return(
         <ImagenBackground tag="section" fluid={image.sharp.fluid} fadeIn="soft">
             <Contenedor>
                 <h1>Bienvenidos al hotel gatsby</h1>
                 <p>Difruta tus vacaciones ahora y con exelente atencion</p>
             </Contenedor>
         </ImagenBackground>
-     );
+    );
 }
  
 export default ImagenHotel;

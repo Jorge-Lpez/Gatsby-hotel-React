@@ -1,11 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ImagenHotel from "../components/imagenHotel";
+import ContenidoInicio from "../components/contenidoinicio";
 
 const IndexPage = () => (
-  <Layout>
-     <ImagenHotel/>
-  </Layout>
+  <>
+      <Layout>
+        <ImagenHotel/>
+        <ContenidoInicio/>
+      </Layout>
+  </>
   /*<Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
