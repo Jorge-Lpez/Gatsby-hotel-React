@@ -1,11 +1,12 @@
 import React from 'react';
+import Navegacion from "./navegacion";
 import { css } from "@emotion/core";
 
 const Header = () => {
     return ( 
         <header
             css={ css`
-                    background-color: #333;
+                    background-color: #222;
                     padding: 1rem;
                 `
             }
@@ -27,8 +28,9 @@ const Header = () => {
                         color: #fff;
                         text-align: center;
                     `}
-                >Hotel gssatsby</h1>
+                >Hotel gatsby</h1>
 
+                <Navegacion/>
             </div>
         </header>
      );

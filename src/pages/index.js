@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
-
+import ImagenHotel from "../components/imagenHotel";
 
 const IndexPage = () => (
   <Layout>
-     <h1>Hola desde pagina index.js</h1>
+     <ImagenHotel/>
   </Layout>
   /*<Layout>
     <SEO title="Home" />
