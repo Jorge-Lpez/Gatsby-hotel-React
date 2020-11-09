@@ -1,12 +1,13 @@
 import React from 'react';
 import Navegacion from "./navegacion";
 import { css } from "@emotion/core";
+import { Link } from "gatsby"
 
 const Header = () => {
     return ( 
         <header
             css={ css`
-                    background-color: #222;
+                    background-color: #2C5884;
                     padding: 1rem;
                 `
             }
@@ -23,12 +24,18 @@ const Header = () => {
                     `
                 }
             >
-                <h1
+                <Link
+                    to={"/"}
                     css={css`
+                        text-decoration: none;
                         color: #fff;
                         text-align: center;
+                        cursor: pointer;
+                        font-size:3rem;
                     `}
-                >Hotel gatsby</h1>
+                >
+                    Hotel gatsby
+                </Link>
 
                 <Navegacion/>
             </div>

@@ -10,6 +10,7 @@ const useHabitaciones = () => {
                 titulo
                 contenido
                 slug
+                id
                 imagen{
                     fluid (maxWidth: 1200){
                         ...GatsbyDatoCmsFluid

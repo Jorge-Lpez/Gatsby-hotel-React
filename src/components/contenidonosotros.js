@@ -8,7 +8,6 @@ const  SobreNosotros = styled.div`
     max-width: 1200px;
     width: 95%;
     margin:0 auto;
-
     @media screen and (min-width: 768px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -43,19 +42,25 @@ const ContenidoNosotros = () => {
     const {titulo, contenido, imagen} = informacion.allDatoCmsPagina.nodes[0];
 
     return ( 
-        <>
-            <h2
+        <> 
+            <div
                 css={css`
-                    font-size: 5rem;
-                    text-align: center;
-                    margin-top: 2rem;
-                    margin-bottom: 2rem;
+                    margin-bottom: 663px;;
                 `}
-            >{titulo}</h2>
-            <SobreNosotros>
-                <p>{contenido}</p>
-                <Image fluid={imagen.fluid}/>
-            </SobreNosotros>
+            >
+                <h2
+                    css={css`
+                        font-size: 5rem;
+                        text-align: center;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                    `}
+                >{titulo}</h2>
+                <SobreNosotros>
+                    <p>{contenido}</p>
+                    <Image fluid={imagen.fluid}/>
+                </SobreNosotros>
+            </div>
         </>
      );
 }
